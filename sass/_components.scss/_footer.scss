@@ -1,0 +1,72 @@
+.container-footer {
+  display: flex;
+}
+
+.contact-list {
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  font-style: normal;
+}
+.link:hover {
+  color: $secondary-text-color;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link-adress {
+  color: $text-color;
+}
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $third-bg-color;
+}
+.link-adress,
+.link-contact {
+  padding-top: 0;
+  padding-bottom: 9px;
+}
+.social-media__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $text-color;
+  margin-bottom: 20px;
+}
+.social-media {
+  display: inline-block;
+  justify-content: center;
+  margin-left: 70px;
+}
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 1218px;
+}
+
+.form__title-subscribe {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $text-color;
+}
+
+.form__footer {
+  margin-top: 10px;
+  width: 570px;
+  height: 86px;
+  margin-left: 93px;
+}
+
+.form__feedback {
+  display: flex;
+  margin-top: 20px;
+}

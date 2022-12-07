@@ -1,0 +1,85 @@
+.icons {
+  padding: 0;
+  border: none;
+  margin-right: 10px;
+  margin-bottom: 30px;
+  background-color: $primary-bg-color;
+  fill: $primary-fill;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition-property: $primary-bg-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background-color: $background-color;
+    fill: $fill;
+    border-radius: 50%;
+  }
+}
+
+.button__icon {
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  cursor: pointer;
+
+  &:active {
+    fill: $fill-color;
+  }
+}
+
+.icon-footer {
+  fill: $fill;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  cursor: pointer;
+}
+
+.btn__icon {
+  padding: 0;
+  border: none;
+  margin-right: 10px;
+  margin-bottom: 30px;
+  border-radius: 50% 50%;
+  width: 44px;
+  height: 44px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    rgba(255, 255, 255, 0.1);
+  transition-property: rgba(33, 150, 243, 0.9);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.input-wrapper:focus-within > .icon-input {
+  fill: $secondary-fill;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon-input {
+  position: absolute;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.icon-size {
+  width: 15px;
+  height: 15px;
+}
+.btn__subscribe {
+  background-image: url(/img/icon-send.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-x: 83%;
+  background-position-y: 65%;
+
+  &:hover {
+    color: $text-color;
+    background-color: #0f60a1;
+  }
+}

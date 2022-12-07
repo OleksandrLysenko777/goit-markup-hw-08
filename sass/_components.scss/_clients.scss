@@ -1,0 +1,38 @@
+.client__item {
+  width: 170px;
+  height: 92px;
+  padding: 16px 32px;
+  cursor: pointer;
+  transition-property: $secondary-rgba-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.section .client-flex-list {
+  display: flex;
+  justify-content: center;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.client-flex-list__item {
+  padding: 0;
+  fill: $primary-fill;
+  margin-right: 30px;
+}
+
+.client {
+  background-color: $primary-bg-color;
+  border: 1px solid $secondary-border-color;
+  border-radius: 4px;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $primary-bg-color;
+    border: 1px solid $primary-border-color;
+    border-radius: 4px;
+    fill: $secondary-fill;
+  }
+}

@@ -1,0 +1,41 @@
+.logo {
+  font-family: Raleway;
+  color: $color;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  margin-top: 24px;
+  margin-bottom: 25px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    color: $secondary-text-color;
+  }
+}
+
+.logo-footer {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: Raleway;
+  color: $text-color;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    color: $secondary-text-color;
+  }
+}
+.web-logo,
+.web-logo-footer {
+  color: $secondary-text-color;
+}
+.section-adress > .logo-footer {
+  padding-bottom: 20px;
+}

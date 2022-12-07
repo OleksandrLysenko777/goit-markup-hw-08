@@ -1,0 +1,114 @@
+.page-header {
+  background-color: $primary-bg-color;
+  border: 1px solid $border;
+  border-bottom: 1px solid $border;
+}
+
+.link-item {
+  color: $secondary-text-color;
+  &:after {
+    position: relative;
+    content: "";
+    display: block;
+    max-width: 78px;
+    height: 4px;
+    bottom: -32px;
+    padding: 0;
+    background-color: $background-color;
+    border-radius: 2px;
+  }
+}
+.link-item {
+  .main-nav & {
+    color: $background-color;
+  }
+}
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 1218px;
+}
+.page-header__nav,
+.page-header__contact {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link-mail,
+.link-tel {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #757575;
+  &:hover {
+    fill: $secondary-fill;
+  }
+}
+.link-nav,
+.link-mail,
+.link-tel {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.link-nav {
+  color: $color;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.list-wrap {
+  display: flex;
+  margin-left: 93px;
+
+  &.link:hover,
+  &.link:focus {
+    color: $secondary-text-color;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+.list-wrap__href:last-child {
+  .list-wrap & {
+    margin-right: 0;
+  }
+}
+.page-header__contact {
+  display: flex;
+  margin-left: 318px;
+  &:hover {
+    color: $secondary-text-color;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+.link:active {
+  .page-header__contact & {
+    color: $textColor;
+    fill: $fillColor;
+  }
+}
+.contact-nav {
+  margin-right: 30px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.link-tel,
+.link-mail {
+  color: $primary-text-color;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+

@@ -1,0 +1,28 @@
+.business {
+  display: block;
+  background-color: $third-bg-color;
+  text-align: center;
+  padding-bottom: 200px;
+}
+.overlay {
+  height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4) 0%,
+      rgba(47, 48, 58, 0.4) 100%
+    ),
+    url(../../img/overlay.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.business__section {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.business__title {
+  color: $text-color;
+}

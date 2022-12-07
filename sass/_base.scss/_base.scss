@@ -1,0 +1,114 @@
+$mobile: 480px;
+$tablet: 764px;
+$desctop: 1200px; 
+
+.page {
+  background-color: $primary-bg-color;
+  color: $color;
+  font-family: Roboto, Raleway, sans-serif;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+  margin-top: 0;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+.list-wrap__href {
+  margin-right: 50px;
+}
+.section {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  //mobile screen 480px & >
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  //tablet screen 768px & >
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  //desctop screen 1200px & >
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+} 
+.flex-list__position {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $primary-text-color;
+}
+input,
+textarea {
+  outline: none;
+}
+.section-team {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.projects {
+  padding-bottom: 94px;
+}
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.contact-button {
+  display: flex;
+  justify-content: center;
+  margin-right: 10px;
+  padding-top: 34px;
+  padding-bottom: 34px;
+  padding: 0;
+  border: none;
+  max-width: 16px;
+  max-height: 16px;
+  background-color: $primary-bg-color;
+  cursor: pointer;
+}
+.link-contact {
+  color: $rgba-color;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
