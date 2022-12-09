@@ -3,9 +3,50 @@
   margin-bottom: 0;
   padding-top: 0;
   padding-bottom: 94px;
+  @media screen and (max-width: 479px) {
+    padding-bottom: 0;
+    .title-main__hidden {
+      display: none;
+      padding: 0;
+      margin: 0;
+    }
+  }
+  @media screen and (min-width: 480px) {
+    padding-bottom: 0;
+    .title-main__hidden {
+      display: none;
+      padding: 0;
+      margin: 0;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    padding-bottom: 0;
+    .title-main__hidden {
+      display: none;
+      padding: 0;
+      margin: 0;
+    }
+  }
+   @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+     .title-main {
+      display:block;
+      margin-top: 0;
+  margin-bottom: 50px;}
+   }
 }
+
 .section-item__img {
-  display: flex;
+  @media screen and (max-width: 479px) {
+    display: none;
+  }
+  @media screen and (min-width: 480px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 .section-item__picture {
   margin-top: 0;

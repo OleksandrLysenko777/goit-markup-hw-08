@@ -1,7 +1,27 @@
 .flex-list__team {
-  display: flex;
+  @media screen and (max-width: 479px) {
+    display: block;
+    max-width: 479px;
+  }
+  @media screen and (min-width: 480px) {
+    display: block;
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100% / 2;
+    margin-bottom: 30px;
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    width: 1200px;
+  }
 }
-
+.flex-list__photo {
+  width: 100%;
+}
 .flex-list__item {
   margin-right: 30px;
   background: $primary-bg-color;
@@ -9,18 +29,62 @@
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-    
-&li:last-child {
-  margin-right: 0;
-}
-}
 
+  &li:last-child {
+    margin-right: 0;
+  }
+  @media screen and (max-width: 479px) {
+    max-width: 479px;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 480px) {
+    height: 622px;
+    width: 450px;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 768px) {
+    height: 536px;
+    width: 354px;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    height: 428px;
+    width: 270px;
+  }
+}
+.flex-list__item {
+  margin-right: 30px;
+  background: $primary-bg-color;
+  border: 1px solid $border;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  &li:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 479px) {
+  .flex-list__photo {
+    height: auto;
+    width: auto;
+  }
+}
 .section-team {
   margin-top: 0;
   margin-bottom: 0;
   background-color: $border-color;
+  @media screen and (min-width: 480px) {
+    margin-right: 0;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+  }
 }
-.flex-list__actions{
+
+.flex-list__actions {
   display: flex;
   padding: 0;
   margin: 0;
