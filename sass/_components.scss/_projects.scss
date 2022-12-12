@@ -1,4 +1,5 @@
 .container-project {
+ 
   @media screen and (min-width: 480px) {
     display: block;
   }
@@ -35,12 +36,17 @@
       opacity: 1;
     }
   }
-  &:nth-child(3n) {
-    margin-right: 0;
+ 
+  @media screen and (min-width: 480px) {
   }
+  @media screen and (min-width: 1200px) {
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
 
-  &:nth-last-child(-n + 3) {
-    margin-bottom: 0;
+    &:nth-last-child(-n + 3) {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -51,6 +57,13 @@
 .project__item {
   position: relative;
   overflow: hidden;
+
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+  }
 }
 
 .project__action {

@@ -1,17 +1,18 @@
 .container-list {
-  padding-left: 0;
+  width: 768px;
 }
 .feature-list {
+  display: flex;
+  @media screen and (max-width: 479px) {
+    display: block;
+  }
   @media screen and (min-width: 480px) {
     display: block;
   }
   @media screen and (min-width: 768px) {
-    max-width: 738px;
+    gap: 30px;
     display: flex;
     flex-wrap: wrap;
-    flex-basis: 100% / 2;
-    gap: 30px;
-    padding-left: 0;
   }
   @media screen and (min-width: 1200px) {
     display: flex;
@@ -28,7 +29,6 @@
   background: $secondary-bg-color;
   border-radius: 4px;
   margin-bottom: 30px;
-
   height: 120px;
   background-size: 70px;
   background-repeat: no-repeat;
@@ -45,13 +45,17 @@
     padding: 25px;
   }
   @media screen and (min-width: 480px) {
+    margin-top: 30px;
     max-width: 450px;
     padding: 25px 190px;
   }
   @media screen and (min-width: 768px) {
+    margin-top: 0;
     max-width: 354px;
-
     padding: 25px 142px;
+    &:first-child {
+      margin-top: 0;
+    }
   }
   @media screen and (min-width: 1200px) {
     max-width: 270px;
@@ -81,7 +85,6 @@
   }
   @media screen and (min-width: 480px) {
     margin-top: 10px;
-    margin-bottom: 30px;
     width: 450px;
     &:last-child {
       margin-bottom: 0;

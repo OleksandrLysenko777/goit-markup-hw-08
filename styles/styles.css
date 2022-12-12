@@ -585,6 +585,26 @@ a {
 }*/
 
 /*clients*/
+/* @media screen and (max-width: 479px) {
+    max-width: 210px;
+    max-height: 92px;
+    padding: 16px 52px;
+  }
+  @media screen and (min-width: 480px) {
+    width: 210px;
+    height: 92px;
+    padding: 16px 52px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 226px;
+    height: 92px;
+    padding: 16px 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+    height: 92px;
+    padding: 16px 32px;
+  }*/
 .section .client-flex-list {
     display: flex;
     justify-content: center;
