@@ -1,6 +1,6 @@
 $mobile: 480px;
 $tablet: 768px;
-$desctop: 1200px; 
+$desctop: 1200px;
 
 .page {
   background-color: $primary-bg-color;
@@ -36,17 +36,23 @@ a {
 .section {
   margin-top: 0;
   margin-bottom: 0;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @media screen and (max-width: 479px) {
+    max-width: 479px;
+    padding: 50px 15px 70px 15px;
+    margin-left: 0;
+  }
   @media screen and (min-width: 480px) {
     width: 480px;
     padding: 50px 15px 70px 15px;
   }
-   @media screen and (min-width: 768px) {
-  max-width: 768px;
-  padding: 60px 15px;
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    padding: 60px 15px;
   }
-
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .container {
@@ -54,15 +60,19 @@ a {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
+  @media screen and (max-width: 479px) {
+    max-width: 479px;
+  }
   @media screen and (min-width: 480px) {
     width: 480px;
   }
-   @media screen and (min-width: 768px) {
-  max-width: 768px;
+  @media screen and (min-width: 768px) {
+    width: 768px;
   }
-
-} 
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
 .flex-list__position {
   margin-top: 0;
   margin-bottom: 16px;

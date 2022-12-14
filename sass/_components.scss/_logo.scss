@@ -5,8 +5,7 @@
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  margin-top: 24px;
-  margin-bottom: 25px;
+
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -14,14 +13,16 @@
   &:hover {
     color: $secondary-text-color;
   }
-  @media screen and (max-width: 279px) {
-    padding: 16px 276px 16px 15px;
+  @media screen and (max-width: 479px) {
+    padding: 16px 0 16px 15px;
     max-width: 100%;
   }
   @media screen and (min-width: 480px) {
     padding: 16px 276px 16px 15px;
     font-size: 24px;
     line-height: 28px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
   @media screena and (min-width: 768px) {
     padding: 26px 87px 26px 15px;
@@ -30,6 +31,8 @@
   }
   @media screen and (min-width: 1200px) {
     padding: 24px 92px 25px 215px;
+    margin-top: 24px;
+    margin-bottom: 25px;
   }
 }
 
