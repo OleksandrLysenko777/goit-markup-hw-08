@@ -1,14 +1,70 @@
 .container-footer {
-  display: flex;
+  @media screen and (min-width: 480px) {
+    display: block;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
+.section-adress {
+  @media screen and (min-width: 480px) {
+    display: block;
+    margin: 0 auto;
+    padding-left: 109px;
+    padding-right: 109px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+}
+.form__input-mail {
+  padding: 15px 0 15px 16px;
+  background-color: $third-bg-color;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  margin-right: 20px;
+  color: $text-color;
 
+  &:hover,
+  &:focus {
+    color: $text-color;
+    border-color: $primary-border-color;
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+  }
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
+}
 .contact-list {
   margin-top: 20px;
-  margin-bottom: 0;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  font-style: normal;
+  @media screen and (min-width: 480px) {
+    width: 232px;
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 232px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    font-style: normal;
+  }
 }
 .link:hover {
   color: $secondary-text-color;
@@ -20,9 +76,25 @@
   color: $text-color;
 }
 .footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
   background-color: $third-bg-color;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-align: center;
+  }
+  @media screen and (min-width: 768px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 .link-adress,
 .link-contact {
@@ -39,11 +111,20 @@
   margin-bottom: 20px;
 }
 .social-media {
-  display: inline-block;
-  justify-content: center;
-  margin-left: 70px;
+  @media screen and (min-width: 480px) {
+    display: block;
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: inline-block;
+    justify-content: center;
+    margin-left: 70px;
+  }
 }
-
 
 .form__title-subscribe {
   font-weight: 700;
@@ -52,16 +133,86 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $text-color;
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 1200px) {
+  }
 }
 
 .form__footer {
-  margin-top: 10px;
-  width: 570px;
-  height: 86px;
-  margin-left: 93px;
+  @media screen and (min-width: 480px) {
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 768px) {
+    margin: 0 auto;
+    display: inline;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-top: 10px;
+    width: 570px;
+    height: 86px;
+    margin-left: 93px;
+  }
 }
 
 .form__feedback {
+  @media screen and (min-width: 480px) {
+    display: block;
+    margin-top: 20px;
+    width: 450px;
+  }
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin-top: 20px;
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-top: 20px;
+  }
+}
+.btn__subscribe {
   display: flex;
-  margin-top: 20px;
+  position: relative;
+  font-size: 16px;
+  line-height: 30px;
+  padding: 10px 62px 10px 28px;
+  letter-spacing: 0.06em;
+  background-color: $background-color;
+  color: $text-color;
+  border-radius: 4px;
+  min-width: 200px;
+  min-height: 50px;
+  border: 1px solid $primary-border-color;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  align-items: center;
+  cursor: pointer;
+  @media screen and (min-width: 480px) {
+    margin: 0 auto;
+    display: block;
+    margin-top: 20px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+    justify-content: center;
+  }
+}
+.btn__subscribe {
+  background-image: url(../../img/icon-send.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-x: 83%;
+  background-position-y: 65%;
+  &:active {
+    color: greenyellow;
+  }
+  &:hover {
+    color: $text-color;
+    background-color: $third-bg-color;
+  }
 }

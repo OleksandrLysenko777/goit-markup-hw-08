@@ -166,41 +166,7 @@
     color: yellowgreen;
   }
 }
-.btn__subscribe {
-  display: flex;
-  position: relative;
-  font-size: 16px;
-  line-height: 30px;
-  padding: 10px 62px 10px 28px;
-  letter-spacing: 0.06em;
-  background-color: $background-color;
-  color: $text-color;
-  border-radius: 4px;
-  min-width: 200px;
-  min-height: 50px;
-  border: 1px solid $primary-border-color;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  align-items: center;
-  cursor: pointer;
-}
-.btn__subscribe {
-  background-image: url(../../img/icon-send.svg);
-  background-repeat: no-repeat;
-  background-position: right;
-  background-position-x: 83%;
-  background-position-y: 65%;
-  &:active {
-    color: greenyellow;
-  }
-  &:hover {
-    color: $text-color;
-    background-color: $third-bg-color;
-  }
-}
+
 
 .button__list {
   display: flex;

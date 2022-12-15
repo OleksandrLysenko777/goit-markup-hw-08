@@ -113,26 +113,7 @@ input {
   letter-spacing: 0.03em;
 }
 
-.form__input-mail {
-  padding: 15px 0 15px 16px;
-  width: 358px;
-  background-color: $third-bg-color;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  margin-right: 20px;
-  color: $text-color;
 
-  &:hover,
-  &:focus {
-    color: $text-color;
-    border-color: $primary-border-color;
-    transition-property: border-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    cursor: pointer;
-  }
-}
 
 textarea {
   resize: none;

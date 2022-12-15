@@ -18,21 +18,25 @@
     max-width: 100%;
   }
   @media screen and (min-width: 480px) {
-    padding: 16px 276px 16px 15px;
+    padding: 16px 016px 15px;
     font-size: 24px;
     line-height: 28px;
     margin-top: 0;
     margin-bottom: 0;
   }
+  @media screen and (max-width: 767px) {
+    padding: 16px 0 16px 15px;
+  }
   @media screena and (min-width: 768px) {
-    padding: 26px 87px 26px 15px;
+    padding: 26px 0 26px 15px;
     font-size: 24px;
     line-height: 28px;
+    max-width: 31px;
   }
   @media screen and (min-width: 1200px) {
-    padding: 24px 92px 25px 215px;
-    margin-top: 24px;
-    margin-bottom: 25px;
+    padding: 24px 0 25px 215px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }
 

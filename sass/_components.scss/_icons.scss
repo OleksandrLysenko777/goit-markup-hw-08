@@ -17,6 +17,10 @@
     fill: $fill;
     border-radius: 50%;
   }
+  @media screen and (min-width: 480px) {
+    margin-right: 10px;
+    margin-bottom: 0;
+  }
 }
 
 .button__icon {
@@ -51,6 +55,10 @@
   transition-property: rgba(33, 150, 243, 0.9);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 480px) {
+    margin-right: 10px;
+    margin-bottom: 0;
+  }
 }
 .input-wrapper:focus-within > .icon-input {
   fill: $secondary-fill;
@@ -70,16 +78,4 @@
 .icon-size {
   width: 15px;
   height: 15px;
-}
-.btn__subscribe {
-  background-image: url(/img/icon-send.svg);
-  background-repeat: no-repeat;
-  background-position: right;
-  background-position-x: 83%;
-  background-position-y: 65%;
-
-  &:hover {
-    color: $text-color;
-    background-color: #0f60a1;
-  }
 }

@@ -1,7 +1,7 @@
 .menu-button {
   display: inline-flex;
   margin: 0;
-  padding: 0;
+  padding-left: 276px;
   border: none;
   background-color: transparent;
   margin: 10px 10px 10px 0;
@@ -19,37 +19,43 @@
   display: none;
 }
 .menu-container {
-  position: absolute;
-  background-color: $primary-bg-color;
-  border-top: none;
-  
-  border-radius: 0px 4px 4px 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-
- 
-   @media screen and (max-width: 767px) {
+  @media screen and (min-width: 480px) {
+    position: absolute;
+    background-color: $primary-bg-color;
+  }
+  @media screen and (max-width: 767px) {
     display: none;
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
     &.is-open {
-    display: block;
-  }
+      display: block;
+    }
   }
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-between;
     flex-grow: 1;
+    max-height: none;
+    top: 0;
+    position: relative;
+    float: right;
+    width: fit-content;
+    background-color: transparent;
+    max-height: 31px;
+  }
+  @media screen and (min-width: 1200px) {
+    display:flex;
   }
 }
 
 .navigations-menu,
 .contacts,
-.media-item  {
-  height:auto;
-  width:auto;
+.media-item {
+  height: auto;
+  width: auto;
+  @media screen and (min-width: 768px) {
+    float: left;
+  }
 }
-
-
