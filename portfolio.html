@@ -20,15 +20,24 @@
   <header class="page-header">
     <div class="container main-nav">
       <a href="/" class="logo page-header__logo"><span class="web-logo page-header__logo">Web</span>Studio</a>
-      <nav class="nav page-header__nav ">
+      <button type="button" class="menu-button is-open" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+        <svg width="40" height="40" aria-label="переключатель мобильного меню">
+          <use class="icon-menu" href="./img/icons.svg#icon-menu"></use>
+          <use class="icon-close" href="./img/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <div class="menu-container" id="menu-conteiner" data-menu>
+        <div class="navigations-menu">
+         <nav class="nav page-header__nav ">
         <ul class="nav__list list-wrap">
-          <li class="list-wrap__href"><a href="./index.html" class="link">Студія</a></li>
-          <li class="list-wrap__href"><a href="./portfolio.html" class="link link-item">Портфоліо</a></li>
-          <li class="list-wrap__href"><a href="#" class="link">Контакти</a></li>
+          <li class="list-wrap__href"><a href="./index.html" class="link link-item link-nav">Студія</a></li>
+          <li class="list-wrap__href"><a href="./portfolio.html" class="link link-nav">Портфоліо</a></li>
+          <li class="list-wrap__href"><a href="#" class="link link-nav">Контакти</a></li>
         </ul>
-      </nav>
-
-      <nav class="page-header__contacts">
+      </nav> 
+        </div>
+        <div class="contacts">
+        <nav class="page-header__contacts">
         <ul class="page-header__contact">
           <li class="page-header__contact-nav contact-nav">
             <a href="mailto:info@devstudio.com" class="link link-mail">
@@ -45,7 +54,18 @@
               </svg>+38 096 111 11 11</a>
           </li>
         </ul>
-      </nav>
+      </nav>  
+        </div>
+        <div class="media-item">
+          <a class="media-item__link" href="#instagram">Instagram</a>
+          <a class="media-item__link" href="#twitter">Twitter</a>
+          <a class="media-item__link" href="#facebook">Facebook</a>
+          <a class="media-item__link" href="#linkedin">LinkedIn</a>
+        </div>
+      </div>
+      
+
+      
     </div>
 
   </header>
@@ -228,16 +248,17 @@
       <div class="social-media">
         <h2 class="social-media__title">приєднуйтесь</h2>
         <ul class="flex-list__actions">
-          <li><button class="btn__icon"><svg class="icon-footer">
+          <li><button id="instagram" class="btn__icon"><svg class="icon-footer">
                 <use href="./img/icons.svg#icon-instagram"></use>
               </svg></button></li>
-          <li><button class="btn__icon"><svg class="icon-footer">
+          <li><button id="twitter" class="btn__icon"><svg class="icon-footer">
                 <use href="./img/icons.svg#icon-twitter"></use>
               </svg></button></li>
-          <li><button class="btn__icon"><svg class="icon-footer">
+          <li><button id="facebook" class="btn__icon"><svg class="icon-footer">
                 <use href="./img/icons.svg#icon-facebook"></use>
               </svg></button></li>
-          <li><button class="btn__icon"><svg class="icon-footer">
+          <li><button 
+           id="linkedin" class="btn__icon"><svg class="icon-footer">
                 <use href="./img/icons.svg#icon-linkedin2"></use>
               </svg></button></li>
         </ul>
@@ -255,6 +276,7 @@
 
     </div>
   </footer>
+   <script src="./js/modal_menu.js"></script>
 </body>
 
 </html>
