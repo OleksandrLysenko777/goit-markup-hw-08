@@ -751,24 +751,27 @@ textarea {
 }
 @media screen and (max-width: 479px) {
   .modal {
-    top: 60px;
-    left: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     max-width: 450px;
     max-height: 609px;
   }
 }
 @media screen and (min-width: 480px) {
   .modal {
-    top: 93px;
-    left: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     min-width: 450px;
     min-height: 609px;
   }
 }
 @media screen and (min-width: 768px) {
   .modal {
-    top: 208px;
-    left: 159px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     min-width: 450px;
     min-height: 609px;
   }
@@ -808,8 +811,26 @@ textarea {
 }
 
 .form {
-  width: 448px;
-  margin: 40px;
+  display: block;
+  margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .form {
+    width: 370px;
+    height: 40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .form {
+    width: 370px;
+    height: 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form {
+    width: 448px;
+    margin: 40px;
+  }
 }
 
 .form__field {
@@ -828,13 +849,26 @@ textarea {
   border-radius: 4px;
 }
 
-.form__title-modal {
-  margin-bottom: 12px;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 23px;
-  text-align: center;
-  letter-spacing: 0.03em;
+@media screen and (min-width: 480px) {
+  .form__title-modal {
+    margin-top: 40px;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form__title-modal {
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
 }
 
 textarea {
@@ -864,8 +898,6 @@ textarea:hover, textarea:focus {
   display: flex;
   align-items: center;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
   letter-spacing: 0.03em;
   color: #757575;
   width: 425px;
@@ -879,6 +911,18 @@ textarea:hover, textarea:focus {
   height: 15px;
   border: 2px solid #212121;
   border-radius: 2px;
+}
+@media screen and (min-width: 480px) {
+  .checkbox-agree {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .checkbox-agree {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
 
 .check-line {
@@ -906,11 +950,23 @@ textarea:hover, textarea:focus {
 
 .input-line {
   display: inline-block;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  margin-left: 12px;
-  max-height: 24px;
-  width: 425px;
+}
+@media screen and (min-width: 480px) {
+  .input-line {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.03em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .input-line {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 12px;
+    max-height: 24px;
+    width: 425px;
+  }
 }
 
 .link-agreement {
@@ -1523,8 +1579,6 @@ textarea:hover, textarea:focus {
   .section-adress {
     padding-left: 70px;
     padding-right: 70px;
-    margin-left: 0;
-    margin-right: 0;
   }
 }
 
@@ -1914,8 +1968,6 @@ textarea:hover, textarea:focus {
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  margin-left: 124px;
-  margin-right: 124px;
 }
 .btn__send:hover {
   background-color: rgb(7, 95, 139);
@@ -1924,6 +1976,18 @@ textarea:hover, textarea:focus {
 }
 .btn__send:focus {
   color: yellowgreen;
+}
+@media screen and (min-width: 480px) {
+  .btn__send {
+    transform: translateX(41%);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .btn__send {
+    transform: translateX(0);
+    margin-left: 124px;
+    margin-right: 124px;
+  }
 }
 
 .button__list {

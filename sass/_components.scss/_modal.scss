@@ -31,20 +31,23 @@
 
   background-color: $primary-bg-color;
   @media screen and (max-width: 479px) {
-    top: 60px;
-    left: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     max-width: 450px;
     max-height: 609px;
   }
   @media screen and (min-width: 480px) {
-    top: 93px;
-    left: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     min-width: 450px;
     min-height: 609px;
   }
   @media screen and (min-width: 768px) {
-    top: 208px;
-    left: 159px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     min-width: 450px;
     min-height: 609px;
   }
@@ -83,8 +86,20 @@
 }
 
 .form {
-  width: 448px;
-  margin: 40px;
+  display: block;
+  margin: 0 auto;
+  @media screen and (min-width: 480px) {
+    width: 370px;
+    height: 40px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 370px;
+    height: 40px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 448px;
+    margin: 40px;
+  }
 }
 
 .form__field {
@@ -105,15 +120,24 @@ input {
 }
 
 .form__title-modal {
-  margin-bottom: 12px;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 23px;
-  text-align: center;
-  letter-spacing: 0.03em;
+  @media screen and (min-width: 480px) {
+    margin-top: 40px;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
 }
-
-
 
 textarea {
   resize: none;
@@ -145,8 +169,7 @@ textarea {
   align-items: center;
 
   font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
+
   letter-spacing: 0.03em;
   color: $primary-text-color;
   width: 425px;
@@ -160,6 +183,14 @@ textarea {
     height: 15px;
     border: 2px solid $third-border-color;
     border-radius: 2px;
+  }
+  @media screen and (min-width: 480px) {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 24px;
   }
 }
 
@@ -185,11 +216,19 @@ textarea {
 }
 .input-line {
   display: inline-block;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  margin-left: 12px;
-  max-height: 24px;
-  width: 425px;
+  @media screen and (min-width: 480px) {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.03em;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 12px;
+    max-height: 24px;
+    width: 425px;
+  }
 }
 
 .link-agreement {
