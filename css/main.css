@@ -134,20 +134,22 @@ a {
 @media screen and (max-width: 479px) {
   .section {
     max-width: 479px;
-    padding: 50px 15px 70px 15px;
-    margin-left: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 }
 @media screen and (min-width: 480px) {
   .section {
-    width: 480px;
-    padding: 50px 15px 70px 15px;
+    max-width: 767px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 @media screen and (min-width: 768px) {
   .section {
-    max-width: 768px;
-    padding: 60px 15px;
+    max-width: 1199px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -158,8 +160,6 @@ a {
 }
 
 .container {
-  padding-left: 15px;
-  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -180,6 +180,8 @@ a {
 }
 @media screen and (min-width: 1200px) {
   .container {
+    padding-left: 15px;
+    padding-right: 15px;
     width: 1200px;
     margin-top: 0;
     margin-bottom: 0;
@@ -230,14 +232,28 @@ textarea {
 }
 
 .overlay {
-  height: 600px;
-  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(../../img/overlay.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+@media screen and (min-width: 480px) {
+  .overlay {
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .overlay {
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .overlay {
+    height: 600px;
+    max-width: 100%;
+  }
 }
 
 .business__section {
@@ -255,25 +271,34 @@ textarea {
   border: 1px solid #ececec;
   border-bottom: 1px solid #ececec;
   border-right: none;
+  border-left: none;
 }
 @media screen and (max-width: 479px) {
   .page-header {
-    max-width: 479px;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
   }
 }
 @media screen and (min-width: 480px) {
   .page-header {
-    width: 480px;
+    display: block;
+    margin: 0 auto;
+    max-width: 767px;
   }
 }
 @media screen and (min-width: 768px) {
   .page-header {
+    display: block;
+    margin: 0 auto;
     min-width: 768px;
     max-height: 80px;
   }
 }
 @media screen and (min-width: 1200px) {
   .page-header {
+    display: block;
+    margin: 0 auto;
     min-width: 1218px;
     max-height: 80px;
   }
@@ -316,7 +341,7 @@ textarea {
 }
 @media screen and (min-width: 480px) {
   .link-item:after {
-    display: none;
+    display: block;
   }
 }
 @media screen and (min-width: 768px) {
@@ -343,16 +368,11 @@ textarea {
     display: flex;
     justify-content: space-between;
     max-width: 479px;
-    padding-left: 0;
   }
 }
 @media screen and (min-width: 480px) {
   .main-nav {
     width: 480px;
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 0;
-    padding-right: 0;
   }
 }
 @media screen and (min-width: 768px) {
@@ -368,7 +388,6 @@ textarea {
     align-items: center;
     justify-content: space-around;
     margin: 0;
-    padding: 24px 0 25px 0;
     width: 1218px;
     height: 80px;
   }
@@ -944,7 +963,12 @@ textarea:hover, textarea:focus {
 }
 
 .container-list {
-  width: 768px;
+  max-width: 768px;
+}
+@media screen and (max-width: 479px) {
+  .container-list {
+    max-width: 479px;
+  }
 }
 
 .feature-list {
@@ -953,6 +977,8 @@ textarea:hover, textarea:focus {
 @media screen and (max-width: 479px) {
   .feature-list {
     display: block;
+    margin: 0 auto;
+    max-width: 450px;
   }
 }
 @media screen and (min-width: 480px) {
@@ -998,7 +1024,7 @@ textarea:hover, textarea:focus {
 }
 @media screen and (max-width: 479px) {
   .feature__icon {
-    max-width: 479px;
+    max-width: 450px;
     background-size: auto;
     padding: 25px;
   }
@@ -1322,6 +1348,26 @@ textarea:hover, textarea:focus {
   }
 }
 
+@media screen and (min-width: 480px) {
+  .section__client {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section__client {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section__client {
+    min-width: 1200px;
+  }
+}
+
 .section .client-flex-list {
   display: flex;
   justify-content: center;
@@ -1337,13 +1383,13 @@ textarea:hover, textarea:focus {
 @media screen and (min-width: 480px) {
   .section .client-flex-list {
     flex-wrap: wrap;
-    width: 450px;
+    max-width: 450px;
   }
 }
 @media screen and (min-width: 768px) {
   .section .client-flex-list {
     flex-wrap: wrap;
-    width: 738px;
+    max-width: 738px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1355,18 +1401,16 @@ textarea:hover, textarea:focus {
 .client-flex-list__item {
   padding: 0;
   fill: #afb1b8;
-  margin-right: 30px;
+  margin: auto;
 }
 @media screen and (min-width: 480px) {
   .client-flex-list__item {
     width: calc((100% - 60px) / 2);
-    margin-bottom: 15px;
   }
 }
 @media screen and (min-width: 768px) {
   .client-flex-list__item {
     width: calc((100% - 90px) / 3);
-    margin-bottom: 15px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1389,6 +1433,11 @@ textarea:hover, textarea:focus {
   border-radius: 4px;
   fill: #2196f3;
 }
+@media screen and (min-width: 768px) {
+  .client {
+    margin-right: 30px;
+  }
+}
 
 .title-main {
   margin-bottom: 30px;
@@ -1399,19 +1448,30 @@ textarea:hover, textarea:focus {
   }
 }
 
+@media screen and (max-width: 479px) {
+  .container-footer {
+    display: block;
+    max-width: 479px;
+  }
+}
 @media screen and (min-width: 480px) {
   .container-footer {
     display: block;
+    max-width: 767px;
   }
 }
 @media screen and (min-width: 768px) {
   .container-footer {
     display: flex;
+    flex-wrap: wrap;
+    max-width: 1199px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container-footer {
     display: flex;
+    flex-wrap: nowrap;
+    min-width: 1200px;
   }
 }
 
@@ -1436,7 +1496,6 @@ textarea:hover, textarea:focus {
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  margin-right: 20px;
   color: #ffffff;
 }
 .form__input-mail:hover, .form__input-mail:focus {
@@ -1450,6 +1509,7 @@ textarea:hover, textarea:focus {
 @media screen and (min-width: 480px) {
   .form__input-mail {
     width: 450px;
+    margin-right: 0;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1460,6 +1520,7 @@ textarea:hover, textarea:focus {
 @media screen and (min-width: 1200px) {
   .form__input-mail {
     width: 358px;
+    margin-right: 20px;
   }
 }
 
@@ -1503,7 +1564,7 @@ textarea:hover, textarea:focus {
 }
 @media screen and (min-width: 480px) {
   .footer {
-    width: 480px;
+    width: 100%;
     padding-top: 60px;
     padding-bottom: 60px;
     font-weight: 400;
@@ -1577,8 +1638,7 @@ textarea:hover, textarea:focus {
 }
 @media screen and (min-width: 768px) {
   .form__footer {
-    margin: 0 auto;
-    display: inline;
+    transform: translateX(35%);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -2016,7 +2076,7 @@ textarea:hover, textarea:focus {
   padding-left: 276px;
   border: none;
   background-color: transparent;
-  margin: 10px 10px 10px 0;
+  margin: 10px 0 10px 0;
 }
 @media screen and (min-width: 768px) {
   .menu-button {

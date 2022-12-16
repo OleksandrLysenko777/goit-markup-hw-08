@@ -5,8 +5,6 @@
   padding-bottom: 200px;
 }
 .overlay {
-  height: 600px;
-  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(
@@ -18,6 +16,16 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  @media screen and (min-width: 480px) {
+    max-width: 100%;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 100%;
+  }
+  @media screen and (min-width: 1200px) {
+    height: 600px;
+    max-width: 100%;
+  }
 }
 .business__section {
   padding-top: 200px;

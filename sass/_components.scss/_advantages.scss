@@ -1,10 +1,16 @@
 .container-list {
-  width: 768px;
+  max-width: 768px;
+  @media screen and (max-width: 479px) {
+    max-width: 479px;
+  }
+  
 }
 .feature-list {
   display: flex;
   @media screen and (max-width: 479px) {
     display: block;
+    margin: 0 auto;
+    max-width: 450px;
   }
   @media screen and (min-width: 480px) {
     display: block;
@@ -40,7 +46,7 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   }
   @media screen and (max-width: 479px) {
-    max-width: 479px;
+    max-width: 450px;
     background-size: auto;
     padding: 25px;
   }
