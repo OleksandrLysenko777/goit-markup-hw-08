@@ -68,22 +68,25 @@
 @media screen and (max-width: 479px) {
   .flex-list__photo {
     height: auto;
-    width: auto;
+    max-width: 100%;
   }
 }
 .section-team {
   margin-top: 0;
   margin-bottom: 0;
   background-color: $border-color;
+  @media screen and (max-width: 479px) {
+    max-width: 100%;
+  }
   @media screen and (min-width: 480px) {
     margin-right: 0;
-    width: 100%;
+    max-width: 100%;
   }
   @media screen and (min-width: 768px) {
-    width: 100%;
+    max-width: 100%;
   }
   @media screen and (min-width: 1200px) {
-    width: 100%;
+    max-width: 100%;
   }
 }
 

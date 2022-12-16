@@ -100,9 +100,9 @@
     align-items: center;
     justify-content: space-around;
     margin: 0;
-    
     width: 1218px;
     height: 80px;
+    transform: translateX(-15%);
   }
 }
 .page-header__nav,
@@ -246,9 +246,9 @@
   @media screen and (min-width: 1200px) {
     display: flex;
     flex-direction: row;
-    padding-right: 30px;
-    margin-left: 0;
-  }
+    
+    transform: translateX(50%)
+}
 }
 .link:active {
   .page-header__contact & {

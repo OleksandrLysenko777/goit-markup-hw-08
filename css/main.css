@@ -156,6 +156,8 @@ a {
   .section {
     padding-top: 94px;
     padding-bottom: 94px;
+    display: block;
+    margin: 0 auto;
   }
 }
 
@@ -241,17 +243,22 @@ textarea {
 }
 @media screen and (min-width: 480px) {
   .overlay {
+    display: block;
     max-width: 100%;
+    height: auto;
   }
 }
 @media screen and (min-width: 768px) {
   .overlay {
+    display: block;
+    height: auto;
     max-width: 100%;
   }
 }
 @media screen and (min-width: 1200px) {
   .overlay {
-    height: 600px;
+    display: block;
+    height: auto;
     max-width: 100%;
   }
 }
@@ -390,6 +397,7 @@ textarea {
     margin: 0;
     width: 1218px;
     height: 80px;
+    transform: translateX(-15%);
   }
 }
 
@@ -564,8 +572,7 @@ textarea {
   .page-header__contact {
     display: flex;
     flex-direction: row;
-    padding-right: 30px;
-    margin-left: 0;
+    transform: translateX(50%);
   }
 }
 
@@ -671,6 +678,7 @@ textarea {
     padding: 24px 0 25px 215px;
     margin-top: 0;
     margin-bottom: 0;
+    transform: translateX(-5%);
   }
 }
 
@@ -970,6 +978,13 @@ textarea:hover, textarea:focus {
     max-width: 479px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .container-list {
+    display: block;
+    margin: auto;
+    min-width: 1200px;
+  }
+}
 
 .feature-list {
   display: flex;
@@ -998,6 +1013,7 @@ textarea:hover, textarea:focus {
     display: flex;
     flex-wrap: nowrap;
     gap: 0;
+    margin: 0 auto;
   }
 }
 
@@ -1280,7 +1296,7 @@ textarea:hover, textarea:focus {
 @media screen and (max-width: 479px) {
   .flex-list__photo {
     height: auto;
-    width: auto;
+    max-width: 100%;
   }
 }
 .section-team {
@@ -1288,20 +1304,25 @@ textarea:hover, textarea:focus {
   margin-bottom: 0;
   background-color: #f5f4fa;
 }
+@media screen and (max-width: 479px) {
+  .section-team {
+    max-width: 100%;
+  }
+}
 @media screen and (min-width: 480px) {
   .section-team {
     margin-right: 0;
-    width: 100%;
+    max-width: 100%;
   }
 }
 @media screen and (min-width: 768px) {
   .section-team {
-    width: 100%;
+    max-width: 100%;
   }
 }
 @media screen and (min-width: 1200px) {
   .section-team {
-    width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -1365,6 +1386,8 @@ textarea:hover, textarea:focus {
 @media screen and (min-width: 1200px) {
   .section__client {
     min-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
   }
 }
 
@@ -1384,17 +1407,31 @@ textarea:hover, textarea:focus {
   .section .client-flex-list {
     flex-wrap: wrap;
     max-width: 450px;
+    display: flex;
+    margin: 0 auto;
+    gap: 30px;
+    transform: translateX(-20px);
   }
 }
 @media screen and (min-width: 768px) {
   .section .client-flex-list {
+    display: flex;
+    gap: 30px;
     flex-wrap: wrap;
     max-width: 738px;
+    margin: 0 auto;
+    justify-content: center;
   }
 }
 @media screen and (min-width: 1200px) {
   .section .client-flex-list {
     flex-wrap: nowrap;
+    margin: 0 auto;
+    justify-content: center;
+    max-width: 1170px;
+    margin-right: 0;
+    gap: 0;
+    transform: translateX(0);
   }
 }
 
@@ -1418,7 +1455,6 @@ textarea:hover, textarea:focus {
     margin-bottom: 0;
   }
 }
-
 .client {
   background-color: #ffffff;
   border: 1px solid #afb1b8;
@@ -1487,6 +1523,8 @@ textarea:hover, textarea:focus {
   .section-adress {
     padding-left: 70px;
     padding-right: 70px;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -2045,6 +2083,12 @@ textarea:hover, textarea:focus {
   position: relative;
   overflow: hidden;
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .project__action {
   display: flex;
   content: "";
