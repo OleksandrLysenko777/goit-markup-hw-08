@@ -28,6 +28,13 @@
   @media screen and (min-width: 768px) {
     padding-left: 70px;
     padding-right: 70px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: left;
   }
 }
 .form__input-mail {
@@ -36,7 +43,7 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  
+
   color: $text-color;
 
   &:hover,
@@ -120,6 +127,9 @@
   text-transform: uppercase;
   color: $text-color;
   margin-bottom: 20px;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 .social-media {
   @media screen and (min-width: 480px) {
@@ -129,11 +139,13 @@
   @media screen and (min-width: 768px) {
     padding-left: 70px;
     padding-right: 70px;
+    width: 372px;
   }
   @media screen and (min-width: 1200px) {
     display: inline-block;
     justify-content: center;
-    margin-left: 70px;
+    margin-left: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -145,8 +157,13 @@
   text-transform: uppercase;
   color: $text-color;
   @media screen and (min-width: 480px) {
+    margin-left: auto;
+    margin-right: auto;
   }
   @media screen and (min-width: 1200px) {
+    display: block;
+    text-align: left;
+    width: 570px;
   }
 }
 
@@ -155,14 +172,12 @@
     margin-bottom: 20px;
   }
   @media screen and (min-width: 768px) {
-    transform: translateX(35%);
+    transform: translateX(30%);
   }
   @media screen and (min-width: 1200px) {
-    display: flex;
-    margin-top: 10px;
-    width: 570px;
-    height: 86px;
-    margin-left: 93px;
+    transform: translateX(0);
+    margin-right: 0;
+    max-width: 100%;
   }
 }
 
@@ -180,6 +195,7 @@
   @media screen and (min-width: 1200px) {
     display: flex;
     margin-top: 20px;
+    width: 570px;
   }
 }
 .btn__subscribe {
@@ -208,8 +224,9 @@
     margin-top: 20px;
   }
   @media screen and (min-width: 1200px) {
-    margin-top: 0;
-    justify-content: center;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
   }
 }
 .btn__subscribe {

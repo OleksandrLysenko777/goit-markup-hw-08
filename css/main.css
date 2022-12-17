@@ -311,6 +311,11 @@ textarea {
   }
 }
 
+@media screen and (max-width: 479px) {
+  .contact-button {
+    display: none;
+  }
+}
 @media screen and (min-width: 480px) {
   .contact-button {
     display: none;
@@ -346,9 +351,14 @@ textarea {
   background-color: #2196f3;
   border-radius: 2px;
 }
+@media screen and (max-width: 479px) {
+  .link-item:after {
+    display: none;
+  }
+}
 @media screen and (min-width: 480px) {
   .link-item:after {
-    display: block;
+    display: none;
   }
 }
 @media screen and (min-width: 768px) {
@@ -423,6 +433,12 @@ textarea {
 .link-tel:hover {
   fill: #2196f3;
 }
+@media screen and (max-width: 479px) {
+  .link-mail,
+.link-tel {
+    justify-content: left;
+  }
+}
 @media screen and (min-width: 480px) {
   .link-mail,
 .link-tel {
@@ -436,6 +452,14 @@ textarea {
   }
 }
 
+@media screen and (max-width: 479px) {
+  .link-nav,
+.link-tel {
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+  }
+}
 @media screen and (min-width: 480px) {
   .link-nav,
 .link-tel {
@@ -455,6 +479,13 @@ textarea {
   }
 }
 
+@media screen and (max-width: 479px) {
+  .link-mail {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+  }
+}
 @media screen and (min-width: 480px) {
   .link-mail {
     font-size: 24px;
@@ -473,6 +504,12 @@ textarea {
   }
 }
 
+@media screen and (max-width: 479px) {
+  .page-header__contact .link-tel {
+    padding-bottom: 32px;
+    color: #2196f3;
+  }
+}
 @media screen and (min-width: 480px) {
   .page-header__contact .link-tel {
     padding-bottom: 32px;
@@ -520,6 +557,14 @@ textarea {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (max-width: 479px) {
+  .list-wrap {
+    display: block;
+    margin: 0 0 290px 40px;
+    text-align: left;
+    line-height: 64px;
+  }
+}
 @media screen and (min-width: 480px) {
   .list-wrap {
     display: block;
@@ -552,6 +597,14 @@ textarea {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (max-width: 479px) {
+  .page-header__contact {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0 0 64px 40px;
+    text-align: left;
+  }
 }
 @media screen and (min-width: 480px) {
   .page-header__contact {
@@ -600,7 +653,7 @@ textarea {
   .media-item {
     display: inline;
     text-align: center;
-    width: 356px;
+    width: 100%;
     height: 796px;
     margin-left: 40px;
     margin-bottom: 48px;
@@ -1579,6 +1632,15 @@ textarea:hover, textarea:focus {
   .section-adress {
     padding-left: 70px;
     padding-right: 70px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-adress {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: left;
   }
 }
 
@@ -1694,6 +1756,11 @@ textarea:hover, textarea:focus {
   color: #ffffff;
   margin-bottom: 20px;
 }
+@media screen and (min-width: 1200px) {
+  .social-media__title {
+    text-align: left;
+  }
+}
 
 @media screen and (min-width: 480px) {
   .social-media {
@@ -1705,13 +1772,15 @@ textarea:hover, textarea:focus {
   .social-media {
     padding-left: 70px;
     padding-right: 70px;
+    width: 372px;
   }
 }
 @media screen and (min-width: 1200px) {
   .social-media {
     display: inline-block;
     justify-content: center;
-    margin-left: 70px;
+    margin-left: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -1724,22 +1793,34 @@ textarea:hover, textarea:focus {
   color: #ffffff;
 }
 @media screen and (min-width: 480px) {
+  .form__title-subscribe {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form__title-subscribe {
+    display: block;
+    text-align: left;
+    width: 570px;
+  }
+}
+
+@media screen and (min-width: 480px) {
   .form__footer {
     margin-bottom: 20px;
   }
 }
 @media screen and (min-width: 768px) {
   .form__footer {
-    transform: translateX(35%);
+    transform: translateX(30%);
   }
 }
 @media screen and (min-width: 1200px) {
   .form__footer {
-    display: flex;
-    margin-top: 10px;
-    width: 570px;
-    height: 86px;
-    margin-left: 93px;
+    transform: translateX(0);
+    margin-right: 0;
+    max-width: 100%;
   }
 }
 
@@ -1761,6 +1842,7 @@ textarea:hover, textarea:focus {
   .form__feedback {
     display: flex;
     margin-top: 20px;
+    width: 570px;
   }
 }
 
@@ -1793,8 +1875,9 @@ textarea:hover, textarea:focus {
 }
 @media screen and (min-width: 1200px) {
   .btn__subscribe {
-    margin-top: 0;
-    justify-content: center;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
   }
 }
 
@@ -2186,6 +2269,11 @@ img {
   background-color: transparent;
   margin: 10px 0 10px 0;
 }
+@media screen and (max-width: 479px) {
+  .menu-button {
+    padding-left: 100px;
+  }
+}
 @media screen and (min-width: 768px) {
   .menu-button {
     display: none;
@@ -2204,22 +2292,36 @@ img {
   display: none;
 }
 
+@media screen and (max-width: 479px) {
+  .menu-container {
+    position: absolute;
+    background-color: #ffffff;
+    display: block;
+    max-width: 100%;
+  }
+}
 @media screen and (min-width: 480px) {
   .menu-container {
     position: absolute;
     background-color: #ffffff;
+    display: block;
+    max-height: 796px;
+    max-width: 100%;
   }
 }
 @media screen and (max-width: 767px) {
   .menu-container {
     display: none;
     position: absolute;
+    border-top: none;
     top: 100%;
     left: 0;
     width: 100%;
   }
   .menu-container.is-open {
     display: block;
+    padding-bottom: 48px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
   }
 }
 @media screen and (min-width: 768px) {
