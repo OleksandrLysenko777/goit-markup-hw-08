@@ -91,7 +91,7 @@
   @media screen and (max-width: 479px) {
     display: flex;
     justify-content: space-between;
-    max-width: 479px;
+    width: 320;
   }
   @media screen and (min-width: 480px) {
     width: 480px;
@@ -229,13 +229,13 @@
   }
   @media screen and (max-width: 479px) {
     display: block;
-    margin: 0 0 290px 40px;
+    margin: 0 0 0 40px;
     text-align: left;
     line-height: 64px;
   }
   @media screen and (min-width: 480px) {
     display: block;
-    margin: 0 0 290px 40px;
+    margin: 0 0 0 40px;
     text-align: left;
     line-height: 64px;
   }
@@ -265,13 +265,13 @@
   @media screen and (max-width: 479px) {
     display: flex;
     flex-direction: column-reverse;
-    margin: 0 0 64px 40px;
+    margin: 0 0 0 40px;
     text-align: left;
   }
   @media screen and (min-width: 480px) {
     display: flex;
     flex-direction: column-reverse;
-    margin: 0 0 64px 40px;
+    margin: 0 0 0 40px;
     text-align: left;
   }
   @media screen and (min-width: 768px) {

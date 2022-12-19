@@ -4,6 +4,7 @@
   text-align: center;
   padding-bottom: 200px;
 }
+
 .overlay {
   margin-left: auto;
   margin-right: auto;
@@ -16,6 +17,13 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  @media screen and (max-width: 479px) {
+    display: block;
+    width: 325px;
+    transform: translateX(0);
+    height: auto;
+   
+  }
   @media screen and (min-width: 480px) {
     display: block;
     max-width: 100%;
@@ -45,6 +53,10 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: $text-color;
+  @media screen and (max-width: 479px) {
+     font-size: 26px;
+    line-height: 42px;
+  }
   @media screen and (min-width: 480px) {
     font-size: 26px;
     line-height: 42px;

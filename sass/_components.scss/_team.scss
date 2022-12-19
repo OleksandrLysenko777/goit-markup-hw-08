@@ -73,7 +73,12 @@
 }
 .container__item {
   @media screen and (max-width: 479px) {
-    width: 320px;
+    max-width: 100%;
+  }
+}
+.title-main__item {
+  @media screen and (max-width: 479px) {
+    color: $text-color;
   }
 }
 .section-team {
@@ -84,6 +89,7 @@
   @media screen and (max-width: 479px) {
     margin-right: 0;
     max-width: 100%;
+    background-color: $primary-text-color;
   }
   @media screen and (min-width: 480px) {
     margin-right: 0;
