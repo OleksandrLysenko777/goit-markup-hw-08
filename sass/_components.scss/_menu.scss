@@ -10,7 +10,6 @@
   @media screen and (max-width: 479px) {
     padding-left: 100px;
     transform: translateX(0);
-  
   }
   @media screen and (max-width: 767px) {
     transform: translateX(5%);
@@ -34,20 +33,19 @@
     background-color: $primary-bg-color;
     display: block;
     max-height: 796px;
-     }
+  }
   @media screen and (min-width: 480px) {
     position: absolute;
     background-color: $primary-bg-color;
     display: block;
- 
   }
   @media screen and (max-width: 767px) {
     display: none;
     position: absolute;
     top: 0;
     left: 0;
-    width:100vw; 
-   height: 796px;
+    width: 100vw;
+    height: 796px;
     &.is-open {
       display: block;
       z-index: 333;
@@ -78,7 +76,7 @@
 .media-item {
   height: auto;
   width: auto;
-    @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     float: left;
   }
 }
