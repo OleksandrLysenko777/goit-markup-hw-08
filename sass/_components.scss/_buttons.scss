@@ -29,12 +29,21 @@
 .button__list {
   display: flex;
    justify-content: center;
+   @media screen and (max-width: 479px) {
+      display: flex; 
+     justify-content: flex-start;
+  flex-wrap: wrap;
+  column-gap: 8px;
+  max-width: 100%;
+  padding-left: 10px;
+   }
   @media screen and (max-width: 767px) {
     display: flex; 
      justify-content: flex-start;
   flex-wrap: wrap;
   column-gap: 8px;
   width: 450px;
+  padding-left: 15px;
   }
   
 }
@@ -116,6 +125,10 @@ margin-bottom: 34px;
       0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
   }
+  @media screen and (max-width: 479px) {
+    max-width: 100%;
+    padding: 6px 6px;
+  }
 }
 
 .button__secondary {
@@ -132,6 +145,10 @@ margin-bottom: 34px;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
       0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
+  }
+  @media screen and (max-width: 479px) {
+    max-width: 100%;
+    padding: 6px 6px;
   }
 }
 
@@ -190,6 +207,10 @@ margin-bottom: 34px;
   }
   &:focus {
     color: yellowgreen;
+  }
+  @media screen and (max-width: 479px) {
+    transform: translateX(34px);
+    
   }
   @media screen and (min-width: 480px) {
     transform: translateX(41%);
